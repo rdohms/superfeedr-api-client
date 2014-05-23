@@ -1,0 +1,14 @@
+{
+    "name": "dms/superfeedr-api-client",
+    "description": "An API client for Superfeedr",
+    "require": {
+        "guzzlehttp/guzzle": "~4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Dohms",
+            "email": "rdohms@gmail.com"
+        }
+    ]
+}
