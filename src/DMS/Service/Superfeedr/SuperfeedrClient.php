@@ -1,4 +1,5 @@
 <?php
+namespace DMS\Service\Superfeedr;
 
 class SuperfeedrClient extends \GuzzleHttp\Client
 {
