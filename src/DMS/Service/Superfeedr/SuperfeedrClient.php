@@ -22,6 +22,7 @@ class SuperfeedrClient extends \GuzzleHttp\Client
             'base_url' => 'https://push.superfeedr.com',
             'defaults' => [
                 'auth'    => [$username, $password],
+                'debug' => fopen('php://output','w')
             ]
         ];
 
@@ -42,10 +43,9 @@ class SuperfeedrClient extends \GuzzleHttp\Client
                 'hub.topic'    => $feed,
                 'hub.callback' => $callbackUrl,
                 'hub.secret'   => $this->hubSecret,
-                'hub.format'   => $format,
+                'format'   => $format,
             ]
         ];
-
 
         return $this->post('/', $options);
 
