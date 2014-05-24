@@ -10,5 +10,11 @@
             "name": "Rafael Dohms",
             "email": "rdohms@gmail.com"
         }
-    ]
+    ],
+
+    "autoload": {
+        "psr-0": {
+            "DMS": "src/"
+        }
+    },
 }
